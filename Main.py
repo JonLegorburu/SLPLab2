@@ -53,8 +53,21 @@ print(information)
 print("Now testing the Morgan's law:")
 #Morgan's Law
 
-p=[True,True,False,False]
-q=[True,False,True,False]
+p=input("T fot True, F for false")
+q=input("T fot True, F for false")
+
+p.upper()
+q.upper()
+
+if(p.__eq__("p")):
+    p=True
+else:
+    p=False
+
+if(q.__eq__("p")):
+    q=True
+else:
+    q=False
 
 x = not(p and q)==(not p) or (not q)
 y = not(p or q)==((not p) and (not q))
